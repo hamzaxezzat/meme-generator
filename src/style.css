@@ -8,6 +8,9 @@ body {
     width: 700px;
     margin: auto;
 }
+main {
+    padding: 36px;
+}
 nav {
 }
 .header {
@@ -34,23 +37,21 @@ nav {
 }
 
 /* ============== Form ================ */
-.input {
-    display: flex;
-    justify-content: space-between;
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
 }
-
-.input input {
-    margin-top: 50px;
-    width: 47%;
-    padding: 15px;
+.form--input {
     border-radius: 5px;
     border: 1px solid #d5d4d8;
+    text-indent: 125px; /* Place holder place */
 }
-.submit {
-    margin-top: 10px;
-    width: 100%;
-    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
-    border: none;
-    padding: 15px;
+.form--button {
+    grid-column: 1 / -1; /* from beginning to end */
     border-radius: 5px;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
