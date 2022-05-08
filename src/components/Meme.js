@@ -1,9 +1,15 @@
 import React from "react";
-
+import data from "../memsData";
 export default function Form() {
+    function handlerGetNewimage() {
+        const url = data.data.memes.map((x) => {
+            return Math.random(x.url * 100);
+        });
+        console.log(url);
+    }
     return (
         <main>
-            <form className="form">
+            <div className="form">
                 <input
                     type="text"
                     className="form--input"
@@ -14,8 +20,10 @@ export default function Form() {
                     className="form--input"
                     placeholder="Bottom Text"
                 />
-                <button className="form--button">Get a bew meme image</button>
-            </form>
+                <button onClick={handlerGetNewimage} className="form--button">
+                    Get a New meme image
+                </button>
+            </div>
         </main>
     );
 }
