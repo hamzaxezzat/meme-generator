@@ -1,14 +1,13 @@
 import React from "react";
+import Header from "./components/Header";
+import Meme from "./components/Meme";
+import "./style.css";
 
 export default function App() {
-    function hover() {
-        console.log("I am hoverd");
-    }
-
     return (
-        <div className="container">
-            <img onMouseOver={hover} src="https://picsum.photos/640/360" />
-            <button>Click me</button>
+        <div>
+            <Header />
+            <Meme />
         </div>
     );
 }
