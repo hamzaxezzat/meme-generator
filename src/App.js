@@ -1,19 +1,14 @@
 import React from "react";
 
 export default function App() {
-    function handleClick() {
-        console.log("I was clicked!");
+    function hover() {
+        console.log("I am hoverd");
     }
-
-    /**
-     * Challenge:
-     * Log something to the console when the mouse hovers over the image
-     */
 
     return (
         <div className="container">
-            <img src="https://picsum.photos/640/360" />
-            <button onClick={handleClick}>Click me</button>
+            <img onMouseOver={hover} src="https://picsum.photos/640/360" />
+            <button>Click me</button>
         </div>
     );
 }
