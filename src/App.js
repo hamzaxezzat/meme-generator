@@ -1,13 +1,19 @@
 import React from "react";
-import Header from "./components/Header";
-import Meme from "./components/Meme";
-import "./style.css";
 
 export default function App() {
+    function handleClick() {
+        console.log("I was clicked!");
+    }
+
+    /**
+     * Challenge:
+     * Log something to the console when the mouse hovers over the image
+     */
+
     return (
-        <div>
-            <Header />
-            <Meme />
+        <div className="container">
+            <img src="https://picsum.photos/640/360" />
+            <button onClick={handleClick}>Click me</button>
         </div>
     );
 }
