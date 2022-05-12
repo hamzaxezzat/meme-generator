@@ -7,7 +7,7 @@ export default function Form() {
                 <input></input>
                 <input></input>
             </div>
-            <input className="submit">Submit</input>
+            <input className="submit"></input>
         </form>
     );
 }
