@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body {
+    width: 700px;
+    margin: auto;
+}
+nav {
+}
+.header {
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header img {
+    width: 50px;
+}
+.header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.header h5 {
+    margin-right: 6px;
+}
+
+/* ============== Form ================ */
+.input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input {
+    margin-top: 50px;
+    width: 47%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d5d4d8;
+}
+.submit {
+    margin-top: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    border: none;
+}
