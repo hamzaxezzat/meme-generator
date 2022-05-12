@@ -11,23 +11,26 @@ body {
 nav {
 }
 .header {
-    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
-    padding: 30px;
     display: flex;
     align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
     color: white;
+    padding: 20px;
 }
 
-.header img {
+.header .header--image {
     width: 50px;
+    margin-right: 4px;
 }
-.header h3 {
+.header .header--title {
     font-size: 20px;
     font-weight: 700;
-    margin-left: 10px;
+    margin-right: auto;
 }
-.header h5 {
-    margin-right: 6px;
+.header .header--project {
+    /* margin-right: auto; */
+    /* float: right; */
 }
 
 /* ============== Form ================ */

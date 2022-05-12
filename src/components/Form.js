@@ -6,8 +6,8 @@ export default function Form() {
             <div className="input">
                 <input></input>
                 <input></input>
+                <input className="submit"></input>
             </div>
-            <input className="submit"></input>
         </form>
     );
 }
