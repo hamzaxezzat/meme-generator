@@ -1,12 +1,14 @@
 import React from "react";
-import data from "../memsData";
+import memesData from "../memesData";
 export default function Form() {
-    function handlerGetNewimage() {
-        const url = data.data.memes.map((x) => {
-            return Math.random(x.url * 100);
-        });
+    let url;
+    function getMemeImage() {
+        const memesArray = memesData.data.memes;
+        const randomMemeNumber = Math.floor(Math.random() * memesArray.length);
+        url = memesArray[randomMemeNumber].url;
         console.log(url);
     }
+
     return (
         <main>
             <div className="form">
@@ -20,9 +22,10 @@ export default function Form() {
                     className="form--input"
                     placeholder="Bottom Text"
                 />
-                <button onClick={handlerGetNewimage} className="form--button">
+                <button onClick={getMemeImage} className="form--button">
                     Get a New meme image
                 </button>
+                <h1>{url}</h1>
             </div>
         </main>
     );
