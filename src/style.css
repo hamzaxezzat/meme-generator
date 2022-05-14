@@ -55,3 +55,11 @@ nav {
     border: none;
     cursor: pointer;
 }
+
+/* Image */
+.memeImage {
+    margin: 10px auto;
+
+    width: 628px;
+    /* height: 500px; */
+}
