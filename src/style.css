@@ -1,18 +1,17 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: "Karla", sans-serif;
 }
+
 body {
-    width: 700px;
+    font-family: "Karla", sans-serif;
     margin: auto;
+    width: 50%;
 }
+
 main {
     padding: 36px;
 }
-nav {
-}
+
 .header {
     display: flex;
     align-items: center;
@@ -22,51 +21,57 @@ nav {
     padding: 20px;
 }
 
-.header .header--image {
-    width: 50px;
-    margin-right: 4px;
-}
-.header .header--title {
-    font-size: 20px;
-    font-weight: 700;
-    margin-right: auto;
-}
-.header .header--project {
-    /* margin-right: auto; */
-    /* float: right; */
+.header--image {
+    height: 100%;
+    margin-right: 6px;
 }
 
-/* ============== Form ================ */
+.header--title {
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+.header--project {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .form {
     display: grid;
     grid-template: 40px 40px / 1fr 1fr;
     gap: 17px;
+    margin-bottom: 17px;
 }
+
 .form--input {
+    font-family: "Karla", sans-serif;
     border-radius: 5px;
     border: 1px solid #d5d4d8;
-    text-indent: 125px; /* Place holder place */
+    text-indent: 5px;
 }
+
 .form--button {
-    grid-column: 1 / -1; /* from beginning to end */
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
     border-radius: 5px;
-    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
     color: white;
     border: none;
     cursor: pointer;
 }
 
-/* Image */
-.full-meme {
+.meme {
     position: relative;
 }
-.memeImage {
-    margin: 10px auto;
 
-    width: 628px;
-    /* height: 500px; */
+.meme--image {
+    max-width: 100%;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
 }
-.meme-text {
+
+.meme--text {
     position: absolute;
     width: 80%;
     text-align: center;
@@ -82,11 +87,12 @@ nav {
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
         -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000,
         -2px 0 0 #000, 2px 2px 5px #000;
-    right: 0;
 }
-.top {
-    top: 50px;
-}
+
 .bottom {
-    bottom: 50px;
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
