@@ -16,11 +16,10 @@ main {
     display: flex;
     align-items: center;
     height: 65px;
-    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    background: linear-gradient(90deg, #fcab01 1.18%, #fe214f 100%);
     color: white;
     padding: 20px;
 }
-
 .header--image {
     height: 100%;
     margin-right: 6px;
@@ -54,7 +53,7 @@ main {
     grid-column: 1 / -1;
     font-family: "Karla", sans-serif;
     border-radius: 5px;
-    background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+    background: linear-gradient(90deg, #fcab01 1.18%, #fe214f 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -77,8 +76,8 @@ main {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    margin: 15px 0;
-    padding: 0 5px;
+    margin: 30px 0;
+    padding: 0 10px;
     font-family: impact, sans-serif;
     font-size: 2em;
     text-transform: uppercase;
